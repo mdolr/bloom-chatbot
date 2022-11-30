@@ -4,7 +4,7 @@
 SCENARIO = '*This is a really long conversation occuring between a chatbot called Bot and an user. Bot tries to respond as humanly as possible to the user and behaves friendly.*\n'
 BOT_NAME = "Bot"
 USER_NAME = "User"
-FIRST_MESSAGE_USER = False  # If False the bot will start the conversation
+FIRST_MESSAGE_USER = True  # If False the bot will start the conversation
 AUDIO_INPUT = False  # If false the user will type the input
 AUDIO_OUTPUT = False  # If false the bot will print the output
 AUDIO_LANGUAGE = "en-US"  # "en-US" "fr-FR"
