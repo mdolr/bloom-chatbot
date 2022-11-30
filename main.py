@@ -51,8 +51,9 @@ def generate_response(config, full_prompt, seed):
     response = response.split(config.USER_NAME)[0]
     response = f'{config.BOT_NAME}: {response}'
 
+    print(response)
     response = utils.punctuation_cut(response)
-
+    print(response)
     if response is None:
         return generate_response(config, full_prompt, seed + random.randint(0, 9999))
 

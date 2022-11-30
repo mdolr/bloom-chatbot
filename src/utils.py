@@ -13,14 +13,14 @@ def punctuation_cut(message):
 
     # In case the bot starts to repeat the context prompt
     if '*' in message:
-        return message.split('*')[0] + '.'
+        return None
 
         # Else If we find punctuations cut the sentence on the last punctuation
     elif '!' in message:
         return '!'.join(message.split('!')[:-1]) + '!'
     elif '?' in message:
         return '?'.join(message.split('?')[:-1]) + '?'
-    elif '.' in message:
-        return '.'.join(message.split('.')[:-1]) + '.'
     elif ',' in message:
         return ','.join(message.split(',')[:-1]) + '.'
+    elif '.' in message:
+        return '.'.join(message.split('.')[:-1]) + '.'
