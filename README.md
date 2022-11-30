@@ -27,6 +27,17 @@ The `SCENARIO` variable is the initial prompt that is given to the model for it 
 - `AUDIO_LANGUAGE` should be set to a BCP-47 from [Google documentation](https://cloud.google.com/speech-to-text/docs/speech-to-text-supported-languages?hl=fr)
 - `LANGUAGE` should be set to a language code like 'en', 'fr', ...
 
+## Usage
+
+### Text mode
+
+At each step the user writes a response to the bot using its keyboard
+
+### Audio mode
+
+- The user can start and stop the recording using `SPACEBAR`. When the speech recognition has finished processing the user can re-record to correct any mistake by pressing `SPACEBAR` again.
+- The user can validate the response by pressing `ENTER`
+
 ## License
 
 [Bloom](https://huggingface.co/bigscience/bloom) is an open-source model distributed under its specific license, your use of this software should align with the license of the model.
